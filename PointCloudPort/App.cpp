@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Michele Pratusevich. All rights reserved.
 //
 
-#include "TestApp.h"
+#include "App.h"
 #include "PointCloud.h"
 #include <string>
 
-TestApp::TestApp(int viewport_width, int viewport_height,
+App::App(int viewport_width, int viewport_height,
 				 int video_width, int video_height,
 				 pointcloud_video_format video_format,
 				 const char* resource_path,
@@ -40,7 +40,7 @@ PointCloudApplication(viewport_width, viewport_height,
 
 
 // Most convoluted way to make a cuboid
-void TestApp::setup_cuboid() {
+void App::setup_cuboid() {
 	float corners[8][3];
 	float normals[6][3];
 	
@@ -95,7 +95,7 @@ void TestApp::setup_cuboid() {
     this->selected_button = SLAM;
 }
 
-void TestApp::draw_ui() {
+void App::draw_ui() {
 	// Draws a basic UI to control the demo app
 	pointcloud_state state = pointcloud_get_state();
 	double now = current_time();
@@ -188,7 +188,7 @@ void TestApp::draw_ui() {
 }
 
 
-void TestApp::render_content(double time_since_last_frame) {
+void App::render_content(double time_since_last_frame) {
 	
     pointcloud_state state = pointcloud_get_state();
 	
@@ -228,7 +228,7 @@ void TestApp::render_content(double time_since_last_frame) {
 }
 
 
-bool TestApp::on_touch_started(double x, double y) {
+bool App::on_touch_started(double x, double y) {
 	
 	pointcloud_state state = pointcloud_get_state();
 	int W = context.viewport_width;
@@ -275,15 +275,15 @@ bool TestApp::on_touch_started(double x, double y) {
 	return false;
 }
 
-bool TestApp::on_touch_moved(double x, double y) {
+bool App::on_touch_moved(double x, double y) {
 	return false;
 }
 
-bool TestApp::on_touch_ended(double x, double y) {
+bool App::on_touch_ended(double x, double y) {
 	return false;
 }
 
-bool TestApp::on_touch_cancelled(double x, double y) {
+bool App::on_touch_cancelled(double x, double y) {
 	return false;
 }
 

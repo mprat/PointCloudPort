@@ -38,7 +38,7 @@
 		context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES1];
 		
 		if (!context || ![EAGLContext setCurrentContext:context]) {
-			[self release];
+//			[self release];
 			return nil;
 		}
     }
@@ -119,9 +119,9 @@
 {
     if ([EAGLContext currentContext] == context)
         [EAGLContext setCurrentContext:nil];
-    
-    [context release];
-    [super dealloc];
+//    
+//    [context release];
+//    [super dealloc];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

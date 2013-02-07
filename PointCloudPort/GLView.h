@@ -33,7 +33,7 @@
     GLuint renderbuffer;
     GLuint depthbuffer;
     
-    id<GLViewDelegate> delegate;
+    __unsafe_unretained id<GLViewDelegate> delegate;
 }
 @property (assign) id<GLViewDelegate>  delegate;
 @property (nonatomic, retain) EAGLContext *context;

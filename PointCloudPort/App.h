@@ -12,7 +12,7 @@
 #include "PointCloudApplication.h"
 #include "TextureUtilities.h"
 
-class TestApp : public PointCloudApplication {
+class App : public PointCloudApplication {
 	
 private:
 	float cuboid_vertices[19][3];
@@ -39,7 +39,7 @@ protected:
 	
 public:
 	
-	TestApp(int viewport_width, int viewport_height,
+	App(int viewport_width, int viewport_height,
 			int video_width, int video_height,
 			pointcloud_video_format video_format,
 			const char* resource_path,

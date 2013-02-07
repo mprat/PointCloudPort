@@ -37,11 +37,11 @@
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
 }
 
-- (void)dealloc {
-	[cameraViewController release];
-    [window release];
-    [super dealloc];
-}
+//- (void)dealloc {
+//	[cameraViewController release];
+//    [window release];
+//    [super dealloc];
+//}
 
 
 @end
