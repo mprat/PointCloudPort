@@ -14,14 +14,18 @@
 		98C7953816C46A3600DD2481 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C7953716C46A3600DD2481 /* OpenGLES.framework */; };
 		98C7953E16C46A3600DD2481 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98C7953C16C46A3600DD2481 /* InfoPlist.strings */; };
 		98C7954016C46A3600DD2481 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C7953F16C46A3600DD2481 /* main.m */; };
-		98C7954416C46A3600DD2481 /* PointCloudPortAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C7954316C46A3600DD2481 /* PointCloudPortAppDelegate.m */; };
 		98C7954616C46A3600DD2481 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C7954516C46A3600DD2481 /* Default.png */; };
 		98C7954816C46A3600DD2481 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C7954716C46A3600DD2481 /* Default@2x.png */; };
 		98C7954A16C46A3600DD2481 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C7954916C46A3600DD2481 /* Default-568h@2x.png */; };
 		98C7954D16C46A3600DD2481 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C7954B16C46A3600DD2481 /* MainStoryboard.storyboard */; };
 		98C7954F16C46A3600DD2481 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 98C7954E16C46A3600DD2481 /* Shader.fsh */; };
 		98C7955116C46A3600DD2481 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 98C7955016C46A3600DD2481 /* Shader.vsh */; };
-		98C7955416C46A3600DD2481 /* PointCloudPortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C7955316C46A3600DD2481 /* PointCloudPortViewController.m */; };
+		98C7956516C46B6C00DD2481 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98C7956416C46B6C00DD2481 /* AppDelegate.mm */; };
+		98C7956816C46BAE00DD2481 /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C7956716C46BAE00DD2481 /* GLView.m */; };
+		98C7956B16C46BD700DD2481 /* HardwareController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98C7956A16C46BD700DD2481 /* HardwareController.mm */; };
+		98C7956E16C46C0900DD2481 /* PointCloudApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98C7956C16C46C0900DD2481 /* PointCloudApplication.cpp */; };
+		98C7957116C46C5300DD2481 /* TextureUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98C7956F16C46C5200DD2481 /* TextureUtilities.cpp */; };
+		98C7957416C46C7B00DD2481 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98C7957216C46C7B00DD2481 /* App.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,16 +39,24 @@
 		98C7953D16C46A3600DD2481 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98C7953F16C46A3600DD2481 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C7954116C46A3600DD2481 /* PointCloudPort-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PointCloudPort-Prefix.pch"; sourceTree = "<group>"; };
-		98C7954216C46A3600DD2481 /* PointCloudPortAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointCloudPortAppDelegate.h; sourceTree = "<group>"; };
-		98C7954316C46A3600DD2481 /* PointCloudPortAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointCloudPortAppDelegate.m; sourceTree = "<group>"; };
 		98C7954516C46A3600DD2481 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		98C7954716C46A3600DD2481 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		98C7954916C46A3600DD2481 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		98C7954C16C46A3600DD2481 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		98C7954E16C46A3600DD2481 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		98C7955016C46A3600DD2481 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		98C7955216C46A3600DD2481 /* PointCloudPortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointCloudPortViewController.h; sourceTree = "<group>"; };
-		98C7955316C46A3600DD2481 /* PointCloudPortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointCloudPortViewController.m; sourceTree = "<group>"; };
+		98C7956316C46B6C00DD2481 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98C7956416C46B6C00DD2481 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		98C7956616C46BAE00DD2481 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		98C7956716C46BAE00DD2481 /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		98C7956916C46BD700DD2481 /* HardwareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardwareController.h; sourceTree = "<group>"; };
+		98C7956A16C46BD700DD2481 /* HardwareController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HardwareController.mm; sourceTree = "<group>"; };
+		98C7956C16C46C0900DD2481 /* PointCloudApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointCloudApplication.cpp; sourceTree = "<group>"; };
+		98C7956D16C46C0900DD2481 /* PointCloudApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointCloudApplication.h; sourceTree = "<group>"; };
+		98C7956F16C46C5200DD2481 /* TextureUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureUtilities.cpp; sourceTree = "<group>"; };
+		98C7957016C46C5200DD2481 /* TextureUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureUtilities.h; sourceTree = "<group>"; };
+		98C7957216C46C7B00DD2481 /* App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
+		98C7957316C46C7B00DD2481 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,14 +107,22 @@
 		98C7953916C46A3600DD2481 /* PointCloudPort */ = {
 			isa = PBXGroup;
 			children = (
-				98C7954216C46A3600DD2481 /* PointCloudPortAppDelegate.h */,
-				98C7954316C46A3600DD2481 /* PointCloudPortAppDelegate.m */,
 				98C7954B16C46A3600DD2481 /* MainStoryboard.storyboard */,
 				98C7954E16C46A3600DD2481 /* Shader.fsh */,
 				98C7955016C46A3600DD2481 /* Shader.vsh */,
-				98C7955216C46A3600DD2481 /* PointCloudPortViewController.h */,
-				98C7955316C46A3600DD2481 /* PointCloudPortViewController.m */,
 				98C7953A16C46A3600DD2481 /* Supporting Files */,
+				98C7956316C46B6C00DD2481 /* AppDelegate.h */,
+				98C7956416C46B6C00DD2481 /* AppDelegate.mm */,
+				98C7956616C46BAE00DD2481 /* GLView.h */,
+				98C7956716C46BAE00DD2481 /* GLView.m */,
+				98C7956916C46BD700DD2481 /* HardwareController.h */,
+				98C7956A16C46BD700DD2481 /* HardwareController.mm */,
+				98C7956C16C46C0900DD2481 /* PointCloudApplication.cpp */,
+				98C7956D16C46C0900DD2481 /* PointCloudApplication.h */,
+				98C7956F16C46C5200DD2481 /* TextureUtilities.cpp */,
+				98C7957016C46C5200DD2481 /* TextureUtilities.h */,
+				98C7957216C46C7B00DD2481 /* App.cpp */,
+				98C7957316C46C7B00DD2481 /* App.h */,
 			);
 			path = PointCloudPort;
 			sourceTree = "<group>";
@@ -191,8 +211,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C7954016C46A3600DD2481 /* main.m in Sources */,
-				98C7954416C46A3600DD2481 /* PointCloudPortAppDelegate.m in Sources */,
-				98C7955416C46A3600DD2481 /* PointCloudPortViewController.m in Sources */,
+				98C7956516C46B6C00DD2481 /* AppDelegate.mm in Sources */,
+				98C7956816C46BAE00DD2481 /* GLView.m in Sources */,
+				98C7956B16C46BD700DD2481 /* HardwareController.mm in Sources */,
+				98C7956E16C46C0900DD2481 /* PointCloudApplication.cpp in Sources */,
+				98C7957116C46C5300DD2481 /* TextureUtilities.cpp in Sources */,
+				98C7957416C46C7B00DD2481 /* App.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
