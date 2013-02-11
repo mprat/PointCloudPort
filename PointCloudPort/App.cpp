@@ -188,6 +188,7 @@ void App::draw_ui() {
 }
 
 
+//TODO: ES2ify
 void App::render_content(double time_since_last_frame) {
 	
     pointcloud_state state = pointcloud_get_state();
@@ -197,29 +198,29 @@ void App::render_content(double time_since_last_frame) {
         
 		switch_to_camera();
         
-        // Set light position
-        static const float light_position[4] = {1, 6, 0.5, 1.0f};
-        glLightfv(GL_LIGHT0, GL_POSITION, light_position);
-        
-		glColor4f(1,0,0,1);
-		
-		glDisable(GL_TEXTURE_2D);
-		glEnable(GL_COLOR_MATERIAL);
-		glShadeModel(GL_FLAT);
-		
-		glEnableClientState(GL_VERTEX_ARRAY);
-		glEnableClientState(GL_NORMAL_ARRAY);
-		
-		glVertexPointer(3, GL_FLOAT, 0, (float *)cuboid_vertices);
-		glNormalPointer(GL_FLOAT, 0, (float *)cuboid_normals);
-		glDrawArrays(GL_TRIANGLE_STRIP, 0, 19);
-		
-		glDisableClientState(GL_NORMAL_ARRAY);
-		glDisableClientState(GL_VERTEX_ARRAY);
-		
-		glShadeModel(GL_SMOOTH);
-		glDisable(GL_COLOR_MATERIAL);
-		glColor4f(1, 1, 1, 1);
+//        // Set light position
+//        static const float light_position[4] = {1, 6, 0.5, 1.0f};
+//        glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+//        
+//		glColor4f(1,0,0,1);
+//		
+//		glDisable(GL_TEXTURE_2D);
+//		glEnable(GL_COLOR_MATERIAL);
+//		glShadeModel(GL_FLAT);
+//		
+//		glEnableClientState(GL_VERTEX_ARRAY);
+//		glEnableClientState(GL_NORMAL_ARRAY);
+//		
+//		glVertexPointer(3, GL_FLOAT, 0, (float *)cuboid_vertices);
+//		glNormalPointer(GL_FLOAT, 0, (float *)cuboid_normals);
+//		glDrawArrays(GL_TRIANGLE_STRIP, 0, 19);
+//		
+//		glDisableClientState(GL_NORMAL_ARRAY);
+//		glDisableClientState(GL_VERTEX_ARRAY);
+//		
+//		glShadeModel(GL_SMOOTH);
+//		glDisable(GL_COLOR_MATERIAL);
+//		glColor4f(1, 1, 1, 1);
 	}
 	
 	// Draw the UI on top of the content

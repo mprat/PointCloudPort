@@ -46,15 +46,16 @@
     return self;
 }
 
+//TODO: ES2ify
 - (void)drawView
 {
-    glBindFramebufferOES(GL_FRAMEBUFFER_OES, framebuffer);
+//    glBindFramebufferOES(GL_FRAMEBUFFER_OES, framebuffer);
     
 	[delegate drawView:self];
-	
-    glBindRenderbufferOES(GL_RENDERBUFFER_OES, renderbuffer);
-    
-	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
+//	
+//    glBindRenderbufferOES(GL_RENDERBUFFER_OES, renderbuffer);
+//    
+//	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
 }
 
 - (void)layoutSubviews
@@ -68,51 +69,53 @@
     [self drawView];
 }
 
+//TODO: ES2ify
 - (BOOL)createFramebuffer
 {
-    glGenFramebuffersOES(1, &framebuffer);
-    glGenRenderbuffersOES(1, &renderbuffer);
-	glGenRenderbuffersOES(1, &depthbuffer);
-    
-    glBindFramebufferOES(GL_FRAMEBUFFER_OES, framebuffer);
-    glBindRenderbufferOES(GL_RENDERBUFFER_OES, renderbuffer);
-	
-    [context renderbufferStorage:GL_RENDERBUFFER_OES fromDrawable:(CAEAGLLayer*)self.layer];
-	
-	// Attach renderbuffer to framebuffer
-    glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, renderbuffer);
+//    glGenFramebuffersOES(1, &framebuffer);
+//    glGenRenderbuffersOES(1, &renderbuffer);
+//	glGenRenderbuffersOES(1, &depthbuffer);
+//    
+//    glBindFramebufferOES(GL_FRAMEBUFFER_OES, framebuffer);
+//    glBindRenderbufferOES(GL_RENDERBUFFER_OES, renderbuffer);
+//	
+//    [context renderbufferStorage:GL_RENDERBUFFER_OES fromDrawable:(CAEAGLLayer*)self.layer];
+//	
+//	// Attach renderbuffer to framebuffer
+//    glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, renderbuffer);
 	
 	GLint width;
     GLint height;
-    
-    glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_WIDTH_OES, &width);
-    glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_HEIGHT_OES, &height);
-	
-	// Create 16 bit depth buffer
-	glBindRenderbufferOES(GL_RENDERBUFFER_OES, depthbuffer);
-	glRenderbufferStorageOES(GL_RENDERBUFFER_OES, GL_DEPTH_COMPONENT16_OES, width, height);
-	
-	// attach the depth buffer to the frame buffer
-	glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_DEPTH_ATTACHMENT_OES, GL_RENDERBUFFER_OES, depthbuffer);
-    
-    if(glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES) != GL_FRAMEBUFFER_COMPLETE_OES) {
-        NSLog(@"OpenGL framebuffer incomplete: %x", glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES));
-        return NO;
-    }
+//    
+//    glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_WIDTH_OES, &width);
+//    glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_HEIGHT_OES, &height);
+//	
+//	// Create 16 bit depth buffer
+//	glBindRenderbufferOES(GL_RENDERBUFFER_OES, depthbuffer);
+//	glRenderbufferStorageOES(GL_RENDERBUFFER_OES, GL_DEPTH_COMPONENT16_OES, width, height);
+//	
+//	// attach the depth buffer to the frame buffer
+//	glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_DEPTH_ATTACHMENT_OES, GL_RENDERBUFFER_OES, depthbuffer);
+//    
+//    if(glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES) != GL_FRAMEBUFFER_COMPLETE_OES) {
+//        NSLog(@"OpenGL framebuffer incomplete: %x", glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES));
+//        return NO;
+//    }
     [delegate setupView:self];
     return YES;
 }
 
+//TODO: ES2ify
 - (void)destroyFramebuffer
 {
-    glDeleteFramebuffersOES(1, &framebuffer);
-    framebuffer = 0;
-	
-    glDeleteRenderbuffersOES(1, &renderbuffer);
-    renderbuffer = 0;
-	
-	glDeleteRenderbuffersOES(1, &depthbuffer);
-	depthbuffer = 0;
+//    glDeleteFramebuffersOES(1, &framebuffer);
+//    framebuffer = 0;
+//	
+//    glDeleteRenderbuffersOES(1, &renderbuffer);
+//    renderbuffer = 0;
+//	
+//	glDeleteRenderbuffersOES(1, &depthbuffer);
+//	depthbuffer = 0;
 }
 
 - (void)dealloc
