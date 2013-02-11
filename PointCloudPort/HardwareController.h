@@ -12,9 +12,9 @@
 #import <CoreMotion/CoreMotion.h>
 
 #import "GLView.h"
-#import "PointCloudApplication.h"
+//#import "PointCloudApplication.h"
 
-//class PointCloudApplication;
+class PointCloudApplication;
 
 @interface HardwareController : UIViewController <GLViewDelegate, UINavigationControllerDelegate, AVCaptureVideoDataOutputSampleBufferDelegate, UIAlertViewDelegate> {
 	AVCaptureSession *captureSession;

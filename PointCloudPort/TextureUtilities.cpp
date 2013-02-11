@@ -76,8 +76,8 @@ void draw_image(GLuint texture_id, double x, double y, double width, double heig
 	glBindTexture(GL_TEXTURE_2D, texture_id);
 	
 	
-	float vertices[8] = {x, y, x+width, y, x+width, y+height, x, y+height};
-	float texcoords[8] = {texcoord_x1, texcoord_y1, texcoord_x2, texcoord_y1, texcoord_x2, texcoord_y2, texcoord_x1, texcoord_y2};
+	float vertices[8] = {static_cast<float>(x), static_cast<float>(y), static_cast<float>(x+width), static_cast<float>(y), static_cast<float>(x+width), static_cast<float>(y+height), static_cast<float>(x), static_cast<float>(y+height)};
+	float texcoords[8] = {static_cast<float>(texcoord_x1), static_cast<float>(texcoord_y1), static_cast<float>(texcoord_x2), static_cast<float>(texcoord_y1), static_cast<float>(texcoord_x2), static_cast<float>(texcoord_y2), static_cast<float>(texcoord_x1), static_cast<float>(texcoord_y2)};
 	
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState( GL_TEXTURE_COORD_ARRAY );

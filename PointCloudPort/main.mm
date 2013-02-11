@@ -1,5 +1,5 @@
 //
-//  main.m
+//  main.mm
 //  PointCloudPort
 //
 //  Created by Michele Pratusevich on 2/7/13.

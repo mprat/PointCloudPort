@@ -28,7 +28,7 @@ PointCloudApplication::PointCloudApplication(int viewport_width, int viewport_he
 					  video_width, video_height,
 					  video_format,
 					  device,
-					  "8dfe1a76-8898-442d-a56b-2ea74bc0cb84");
+					  "5fee8d84-72f5-4491-af82-e2a1e9bd0bab");
 	
 	context = pointcloud_get_context();
 	
