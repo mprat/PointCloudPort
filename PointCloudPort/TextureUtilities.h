@@ -9,8 +9,8 @@
 #ifndef PointCloudPort_TEXTUREUTILITIES_H
 #define PointCloudPort_TEXTUREUTILITIES_H
 
-#include <OpenGLES/ES1/gl.h>
-#include <OpenGLES/ES1/glext.h>
+#include <OpenGLES/ES2/gl.h>
+#include <OpenGLES/ES2/glext.h>
 
 extern "C" { bool read_png_image(const char *filename, char **data, int *width, int *height); }
 

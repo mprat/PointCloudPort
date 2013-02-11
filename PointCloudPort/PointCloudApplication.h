@@ -12,9 +12,9 @@
 #include "PointCloud.h"
 #include "TextureUtilities.h"
 
-// iOS opengl ES1.1 includes
-#include <OpenGLES/ES1/gl.h>
-#include <OpenGLES/ES1/glext.h>
+// iOS opengl ES2 includes
+#include <OpenGLES/ES2/gl.h>
+#include <OpenGLES/ES2/glext.h>
 
 // iOS time
 #include <QuartzCore/QuartzCore.h>
