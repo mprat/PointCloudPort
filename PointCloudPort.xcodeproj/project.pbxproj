@@ -42,7 +42,6 @@
 		98C7954616C46A3600DD2481 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C7954516C46A3600DD2481 /* Default.png */; };
 		98C7954816C46A3600DD2481 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C7954716C46A3600DD2481 /* Default@2x.png */; };
 		98C7954A16C46A3600DD2481 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C7954916C46A3600DD2481 /* Default-568h@2x.png */; };
-		98C7954D16C46A3600DD2481 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C7954B16C46A3600DD2481 /* MainStoryboard.storyboard */; };
 		98C7954F16C46A3600DD2481 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 98C7954E16C46A3600DD2481 /* Shader.fsh */; };
 		98C7955116C46A3600DD2481 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 98C7955016C46A3600DD2481 /* Shader.vsh */; };
 		98C7956516C46B6C00DD2481 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98C7956416C46B6C00DD2481 /* AppDelegate.mm */; };
@@ -93,7 +92,6 @@
 		98C7954516C46A3600DD2481 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		98C7954716C46A3600DD2481 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		98C7954916C46A3600DD2481 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		98C7954C16C46A3600DD2481 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		98C7954E16C46A3600DD2481 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		98C7955016C46A3600DD2481 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		98C7956316C46B6C00DD2481 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 			children = (
 				9806C55516C98B7A005BD22B /* Resources */,
 				9806C54816C9888E005BD22B /* PointCloud.h */,
-				98C7954B16C46A3600DD2481 /* MainStoryboard.storyboard */,
 				98C7954E16C46A3600DD2481 /* Shader.fsh */,
 				98C7955016C46A3600DD2481 /* Shader.vsh */,
 				98C7953A16C46A3600DD2481 /* Supporting Files */,
@@ -290,7 +287,6 @@
 				98C7954616C46A3600DD2481 /* Default.png in Resources */,
 				98C7954816C46A3600DD2481 /* Default@2x.png in Resources */,
 				98C7954A16C46A3600DD2481 /* Default-568h@2x.png in Resources */,
-				98C7954D16C46A3600DD2481 /* MainStoryboard.storyboard in Resources */,
 				98C7954F16C46A3600DD2481 /* Shader.fsh in Resources */,
 				98C7955116C46A3600DD2481 /* Shader.vsh in Resources */,
 				9806C56816C98B7A005BD22B /* Default-568h@2x.png in Resources */,
@@ -340,14 +336,6 @@
 				98C7953D16C46A3600DD2481 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		98C7954B16C46A3600DD2481 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98C7954C16C46A3600DD2481 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
